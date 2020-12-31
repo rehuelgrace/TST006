@@ -41,6 +41,22 @@ ul li.active a{
 	height: auto;
 	margin-top: 10px
 }
+.about{
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    position: absolute;
+    padding: 40px;
+    top: 200px;
+	left: 100px;
+	right: 100px;
+}
+.about p {
+    margin: 5px;
+    font-weight: normal;
+    color: #000000;
+}
 .main{
 	max-width: 1200px;
 	margin: auto;

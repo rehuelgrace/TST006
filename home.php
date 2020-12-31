@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo "REST Web Service"?></title>
+	<title><?php echo "Home | ARMY World"?></title>
     <link href="style.css?version=<?php echo filemtime('style.css'); ?>" rel="stylesheet">
 </head>
 <body>
@@ -17,10 +17,12 @@
 				<li><a href="data.php">Data Anggota</a></li>
 			</ul>
 		</div>
-		<div class="title">
-			<h1 style="font-family:Courier">ARMY WORLD</h1>
+		<div class="about">
+			<h1>Welcome to ARMY WORLD</h1>
+			<br><br><br>
+			<a href="logout.php">Logout</a>
 		</div>
-<!-- 		<div class="button">
+		<!-- 		<div class="button">
 			<a href="#" class="btn">WELCOME</a>
 			<a href="#" class="btn">ARMY KINGDOM</a>
 		</div> -->

@@ -1,19 +1,3 @@
-<?php 
-function curl($url){
-    $ch = curl_init(); 
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-    $output = curl_exec($ch);  
-    curl_close($ch);      
-    return $output;
-}
-
-$curl = curl("http://127.0.0.1/rest_ci/index.php/dbtst");
-
-// mengubah JSON menjadi array
-$data = json_decode($curl, TRUE);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,8 +43,13 @@ $data = json_decode($curl, TRUE);
                     <th scope="col">AKSI</th>
                   </tr>
                 </thead>
-                <?php foreach($data as $row){ ?>
-                <tr>
+                <tbody>
+                  <?php 
+                      include('config.php');
+                      $query = mysqli_query($conn,"SELECT * FROM t_profile");
+                      while($row = mysqli_fetch_array($query)){
+                  ?>
+                  <tr>
                       <td><?php echo $row['id'] ?></td>
                       <td><?php echo $row['name'] ?></td>
                       <td><?php echo $row['email'] ?></td>
@@ -73,6 +62,7 @@ $data = json_decode($curl, TRUE);
                   </tr>
 
                 <?php } ?>
+                </tbody>
               </table>
             </div>
           </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo "REST Web Service"?></title>
+	<title><?php echo "About Us | ARMY World"?></title>
     <link href="style.css?version=<?php echo filemtime('style.css'); ?>" rel="stylesheet">
 </head>
 <body>
@@ -17,13 +17,11 @@
 				<li><a href="data.php">Data Anggota</a></li>
 			</ul>
 		</div>
-		<div class="title">
-			<h1>ARMY WORLD</h1>
+		<div class="about">
+			<h1>About Us</h1>
+			<br>
+			<p>Website ini dibuat untuk tugas pengganti UAS II3160 Teknologi Sistem Terintegrasi</p>
 		</div>
-<!-- 		<div class="button">
-			<a href="#" class="btn">WELCOME</a>
-			<a href="#" class="btn">ARMY KINGDOM</a>
-		</div> -->
 	</div>
 </body>
 </html>
