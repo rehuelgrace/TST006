@@ -5,7 +5,7 @@
 2. Download dan install web server (dalam hal ini, saya gunakan XAMPP)
 3. Extract filenya di folder htdocs dalam XAMPP
 4. Set 'start' modul Apache dan MySQL
-5. Buka localhost/phpmyadmin lalu buat database *dbtst* (bebas dinamakan sebagai apa, yang penting disesuaikan dengan file database.php pada variabel database name di https://github.com/rehuelgrace/ci-restserver ). Tabel dan atribut sesuaikan dengan gambar *tampilan database* di bagian akhir dari file ini.
+5. Buka localhost/phpmyadmin lalu buat database *dbtst* (bebas dinamakan sebagai apa, yang penting disesuaikan dengan file database.php pada variabel database name di https://github.com/rehuelgrace/ci-restserver ). Tabel dan atribut sesuaikan dengan gambar *tampilan database* di bagian akhir dari file ini atau dapat langsung import file sql yang sudah tersedia di repository ini (t_profile.sql dan users.sql)
 6. Clone repository https://github.com/rehuelgrace/ci-restserver lalu letakkan di htdocs juga.
 7. Terakhir, masukkan localhost/<path-file-yang-diekstrak> ke address bar browser
 
